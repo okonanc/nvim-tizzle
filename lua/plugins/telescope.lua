@@ -63,6 +63,13 @@ return {
 			desc = "[F]ind in NeoVim [C]onfiguration",
 		},
 		{
+			"<leader>fd",
+			function()
+				require("telescope.builtin").diagnostics()
+			end,
+			desc = "[F]ind Diagnostics (Telescope)",
+		},
+		{
 			"<leader>fh",
 			function()
 				require("telescope.builtin").help_tag()
